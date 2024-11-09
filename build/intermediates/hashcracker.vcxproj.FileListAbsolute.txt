@@ -1,0 +1,2 @@
+C:\Users\schwarztoter\source\repos\hashcracker\build\intermediates\hashcrac.0107125F.Up2Date
+C:\Users\schwarztoter\source\repos\hashcracker\build\libcrypto-3-x64.dll
