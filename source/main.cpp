@@ -7,28 +7,28 @@
 
 int main()
 {
-	std::ifstream inputFile("C:\\Users\\schwarztoter\\source\\repos\\hashcracker\\build\\passwords.txt");
+	std::ifstream inputFile("C:\\Users\\schwarztoter\\source\\repos\\hashcracker\\build\\passwords.txt"); // location of password list.
 
-	std::vector<std::string> passwords;
+	std::vector<std::string> passwords; // vector of strings to store password list in.
 	std::string buffer;
 
 	if (!inputFile)
 	{
-		printf("Failed to open the input file");
+		printf("Failed to open the input file\n");
 		return 1;
 	}
 
-	while (std::getline(inputFile, buffer))
+	while (std::getline(inputFile, buffer)) // gets each line within password list and stores them into the passwords.
 	{
 		passwords.push_back(buffer);
 	}
 
-	inputFile.close();
+	inputFile.close(); // closes input file, becasue we dont need it anymore.
 
-	for (const auto& password : passwords)
+	for (const auto& password : passwords) // loops through vector printing out all passwords allocated to it.
 	{
 		std::cout << password << '\n';
 	}
 
-	return 1;
+	return 0;
 }
